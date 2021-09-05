@@ -1,0 +1,15 @@
+.title KiCad schematic
+.include "/home/tania/Nextcloud/Informationen/Spice/1N4001RL.LIB"
+.include "/home/tania/Nextcloud/Informationen/Spice/regulators.lib.txt"
+Vs1 Net-_Ri1-Pad2_ Net-_D3-Pad2_ dc 0 ac 10 sin(0 15 20 0 0)
+D1 0 Net-_D1-Pad2_ D1n4001rl
+D3 0 Net-_D3-Pad2_ D1n4001rl
+D2 Net-_D1-Pad2_ Net-_C1-Pad1_ D1n4001rl
+D4 Net-_D3-Pad2_ Net-_C1-Pad1_ D1n4001rl
+Ri1 Net-_D1-Pad2_ Net-_Ri1-Pad2_ 15
+Rl1 Net-_C2-Pad1_ 0 5
+C1 Net-_C1-Pad1_ 0 4700u
+XU1 Net-_C1-Pad1_ 0 Net-_C2-Pad1_ LM7805
+C2 Net-_C2-Pad1_ 0 100n
+C3 Net-_C1-Pad1_ 0 4700u
+.end
